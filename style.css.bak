@@ -1,0 +1,13 @@
+<style>
+     body {
+                background-color: powderblue;
+         }
+
+            h2 {
+                color: midnightblue;
+            }
+
+            p {
+                color: dodgerblue;
+            }
+        </style>

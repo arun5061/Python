@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{da6b130a-0cfc-425a-9f11-a2c35cde0a17}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Clock_Demo.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Class\Class_fun.py" />
+    <Compile Include="Class\Class_fun_con_des.py" />
+    <Compile Include="Class\Class_Inheritance.py" />
+    <Compile Include="Class\class_static_method.py" />
+    <Compile Include="Class\Emp.py" />
+    <Compile Include="Class\pickle_ex.py" />
+    <Compile Include="Class\pickling_unpicking.py" />
+    <Compile Include="Class\unpickle_ex.py" />
+    <Compile Include="Clock_Demo.py" />
+    <Compile Include="Decorator_function.py" />
+    <Compile Include="Defination.py" />
+    <Compile Include="Dictionary_ex.py" />
+    <Compile Include="Dict_ex.py" />
+    <Compile Include="Dic_sumoff.py" />
+    <Compile Include="Examples.py" />
+    <Compile Include="Factorial.py" />
+    <Compile Include="Flow_control.py" />
+    <Compile Include="for_ex.py" />
+    <Compile Include="Function.py" />
+    <Compile Include="Modules\assert_ex.py" />
+    <Compile Include="Modules\Exception_ex.py" />
+    <Compile Include="Modules\logging_ex.py" />
+    <Compile Include="Modules\Main.py" />
+    <Compile Include="Modules\Math_Mod.py" />
+    <Compile Include="Modules\Module1.py" />
+    <Compile Include="Modules\Random_mod.py" />
+    <Compile Include="Modules\Try_Except_Finally.py" />
+    <Compile Include="Nested_for.py" />
+    <Compile Include="Parameters.py" />
+    <Compile Include="print.py" />
+    <Compile Include="set_tuple_list_ex.py" />
+    <Compile Include="Star_Pyramid.py" />
+    <Compile Include="String count using dict.py" />
+    <Compile Include="String_Ex.py" />
+    <Compile Include="String_Ex2.py" />
+    <Compile Include="Test.py" />
+    <Compile Include="Transfer_Satements.py" />
+    <Compile Include="Tuple_Ex.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Class\emp.txt" />
+    <Content Include="Modules\log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Class" />
+    <Folder Include="Modules" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

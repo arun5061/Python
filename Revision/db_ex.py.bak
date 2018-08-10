@@ -1,0 +1,37 @@
+import sqlite3
+conn = sqlite3.connect('test.db')
+c = conn.cursor()
+def create_tab():
+	#q1 = 'CREATE TABLE emp (eno INT, ename TEXT, eadd TEXT)'
+	#c.execute(q1)
+	print(1)
+	q2 = 'INSERT INTO emp VALUES(:eno, :ename, :eadd)'
+	records=[(1122223,'Arun N','HYD'),
+	         (1052820,'Kiran','VJD'),
+			 (1278956,'Vishnu','ATP')]
+	print(2)
+	c.executemany(q2,records)
+	conn.commit()
+def create_tab_in():
+	while True:
+		print(3)
+		eno=int(input('Enter eno:'))
+		ename=input('Enter ename:')
+		eadd=input('Enter eadd:')
+		q3 = "INSERT INTO emp VALUES(%d, '%s', '%s')"
+		c.execute(q3 %(eno,ename,eadd))
+		conn.commit()
+		print('Inserted successfully')
+		option=input('Do you want to insert one more [Yes|No]:')
+		if option=='No':
+			break
+def read_dat():
+	c.execute('SELECT * FROM emp')
+	data=c.fetchall()
+	print(data)
+	c.close()
+	conn.close()
+	print('success')
+
+create_tab()
+read_dat()

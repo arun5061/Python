@@ -1,0 +1,2 @@
+2018-07-01 08:49:42,227:root:processing new record
+2018-07-01 08:49:44,718:root:processed for record 15 & 2

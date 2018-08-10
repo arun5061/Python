@@ -1,0 +1,10 @@
+s='12345arun3568'
+print(len(s))
+start='2345'
+end='356'
+x=s.index(start)+len(start)
+print('x:',x)
+y=s.index(end)
+print('y:',y)
+z=s[x:y]
+print('z:',z)

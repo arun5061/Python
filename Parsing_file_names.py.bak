@@ -1,0 +1,10 @@
+import os,re
+os.chdir(r"C:\Users\Nettyam Arun Kumar\Videos\Free YouTube Downloader")
+i=0
+for f in os.listdir():
+	f_name, f_ext =os.path.splitext(f)
+	l=re.split('[ ]',f_name)
+	name=l[10]
+	new_name='{}-tutorial-{}'.format(name,f_ext)
+	os.rename(f,new_name)
+	i+=1

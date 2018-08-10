@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            background-color: chartreuse
+        }
+        h2{
+            color: darkgoldenrod
+        }
+        label {
+            color: blue
+        }
+        form{
+            color: tomato
+        }
+    </style>
+    <title>Registeration Form</title>
+</head>
+<body>
+    <h2>Student Registeration Form</h2>
+    <form action="/submit.html" method="post">
+        Company:<input type="Text" name="comp" placeholder="Company Name" /><br />
+        <label for="fn">First Name:</label>
+        <input id="fn" type="Text" name="name" value="" required /><br />
+        <label for="ln">Last Name:</label>
+        <input id="ln" type="Text" name="name" value="" required /><br />
+        <label for="em">Email:</label>
+        <input id="em" type="email" name="e" placeholder="Email" required /><br />
+        <label for="m">Male</label>
+        <input id="m" type="radio" name="g" value="" required />
+        <label for="F">Female</label>
+        <input id="F" type="radio" name="g" value="" required /><br />
+        New to Registeration:<input type="checkbox" readonly /><br />
+        <input type="submit" name="s" value="Submit"
+    </form>
+</body>
+</html>

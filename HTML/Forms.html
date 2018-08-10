@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            background: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&h=350);
+            border: 1px solid red;
+            background-color: lightblue;
+            background-repeat: no-repeat;
+        }
+        h2{
+            color: darkgoldenrod
+        }
+        label {
+            color: blue
+        }
+        form{
+            color: blue
+        }
+        h2:hover{
+            color: blueviolet;
+            font-size: 25px
+        }
+        input {
+            background-color: cornflowerblue
+        }
+        select {
+            background-color: darkkhaki
+        }
+    </style>
+    <title>Registeration Form</title>
+</head>
+<body>
+    <h2>*****Student Registeration Form*****</h2>
+    <form action="/Users/kiran/Desktop/Python/HTML/Forms.html" method="post">
+        Company:<input type="Text" name="comp" placeholder="Company Name" /><br />
+        <label for="fn">First Name:</label>
+        <input id="fn" type="Text" name="name" value="" pattern="[a-z][0-9]{2,5}" title="Please enter Min 3 characters" required /><br />
+        <label for="ln">Last Name:</label>
+        <input id="ln" type="Text" name="name" value="" required /><br />
+        <label for="em">Email:</label>
+        <input id="em" type="email" name="p" placeholder="Email" required /><br />
+        <label for="pw">Password:</label>
+        <input id="pw" type="password" name="p" placeholder="password" required /><br />
+        <label for="m">Male</label>
+        <input id="m" type="radio" name="g" value="" required />
+        <label for="F">Female</label>
+        <input id="F" type="radio" name="g" value="" required /><br />
+        New to Registeration:<input type="checkbox" readonly /><br />
+        <select name="sub">
+            <option value="Hin">Hindi</option>
+            <option value="Tel">Telugu</option>
+            <option value="Eng">English</option>
+            <option value="San">Sanskrit</option>
+            <option value="Hindi"></option>
+        </select><br />
+        <textarea name="feedback" rows="8" cols="80"></textarea>
+        <ol>
+            <li>Eng</li>
+            <li>Tel</li>
+            <li>Math</li>
+            <li>dur</li>
+        </ol>
+        <input type="submit" name="s" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+import re,urllib.request
+u=urllib.request.urlopen("https://www.google.co.in/search?q=rediffmail&oq=redff&aqs=chrome.1.69i57j0l5.5408j0j7&sourceid=chrome&ie=UTF-8")
+text=u.read()
+n=re.findall('<title>(.*)</title>',str(text))
+print(n[0])
+

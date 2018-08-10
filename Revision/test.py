@@ -1,0 +1,25 @@
+f=open('test.txt','w')
+f.write('1) Hi this my first file - test')
+f.write('\n')
+f.write('2) Still there are few more lines....')
+print(f.tell())
+f.write('\n')
+f.write('4) Fourth line....')
+f.close()
+with open('test.txt','r') as f:
+	f_content=f.readlines()
+	print('Readlines:',f_content)
+	f.seek(0) #---> Seek because read will always take postion, if we use read in previous lines it will continue from that position
+	f_content=f.readline()
+	print('Readline:',f_content)
+	print(f.tell())
+	f.seek(0)
+	print(f.tell())
+	for line in f:
+		print(len(line))
+		print(line)
+	print(f.tell())
+	count=f.tell()
+f.close()
+print('Done')
+
